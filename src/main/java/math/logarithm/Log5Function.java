@@ -1,12 +1,6 @@
 package math.logarithm;
 
-import math.MathFunction;
-
-public interface Log5Function extends MathFunction {
+public interface Log5Function {
     Double log5(Double x);
 
-    @Override
-    default Double evaluate(Double arg) {
-        return log5(arg);
-    }
 }

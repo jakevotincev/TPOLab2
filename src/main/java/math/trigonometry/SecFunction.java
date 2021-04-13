@@ -1,12 +1,6 @@
 package math.trigonometry;
 
-import math.MathFunction;
-
-public interface SecFunction extends MathFunction {
+public interface SecFunction  {
     Double sec(Double x);
 
-    @Override
-    default Double evaluate(Double arg) {
-        return sec(arg);
-    }
 }

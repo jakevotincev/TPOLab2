@@ -1,12 +1,6 @@
 package math.logarithm;
 
-import math.MathFunction;
-
-public interface LnFunction extends MathFunction {
+public interface LnFunction  {
     Double ln(Double x);
 
-    @Override
-    default Double evaluate(Double arg) {
-        return ln(arg);
-    }
 }

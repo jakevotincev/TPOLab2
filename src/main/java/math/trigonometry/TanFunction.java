@@ -1,12 +1,6 @@
 package math.trigonometry;
 
-import math.MathFunction;
-
-public interface TanFunction extends MathFunction {
+public interface TanFunction {
     Double tan(Double x);
 
-    @Override
-    default Double evaluate(Double arg) {
-        return tan(arg);
-    }
 }
