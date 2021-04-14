@@ -12,7 +12,7 @@ public class LnFunctionImpl implements LnFunction {
         double arg = (x - 1) / (x + 1);
         double sum = 0.0;
         double pow = arg;
-        for (int i = 1; i < 100; i += 2) {
+        for (int i = 1; i < 10000; i += 2) {
             sum += pow / i;
             pow *= arg * arg;
         }

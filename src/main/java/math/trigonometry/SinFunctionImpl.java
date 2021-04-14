@@ -23,7 +23,7 @@ public class SinFunctionImpl implements SinFunction {
         long fact = 1;
         short sign = 1;
 
-        for (int i = 1; i < 100; i++) {
+        for (int i = 1; i < 9; i++) {
             result += sign * pow / fact;
             sign *= -1;
             pow *= x * x;

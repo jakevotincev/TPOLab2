@@ -7,6 +7,10 @@ public class CotFunctionImpl implements CotFunction{
         this.tanFunction = tanFunction;
     }
 
+    public CotFunctionImpl() {
+        tanFunction = new TanFunctionImpl(new CosFunctionImpl(), new SinFunctionImpl());
+    }
+
     @Override
     public Double cot(Double x) {
         return 1/ tanFunction.tan(x);

@@ -7,6 +7,9 @@ public class CosFunctionImpl implements CosFunction {
         this.sinFunction = sinFunction;
     }
 
+    public CosFunctionImpl() {
+        sinFunction = new SinFunctionImpl();
+    }
 
     @Override
     public Double cos(Double x) {

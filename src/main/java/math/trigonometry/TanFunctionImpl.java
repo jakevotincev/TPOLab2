@@ -9,6 +9,11 @@ public class TanFunctionImpl implements TanFunction {
         this.sinFunction = sinFunction;
     }
 
+    public TanFunctionImpl() {
+        cosFunction = new CosFunctionImpl();
+        sinFunction = new SinFunctionImpl();
+    }
+
     @Override
     public Double tan(Double x) {
         return sinFunction.sin(x) / cosFunction.cos(x);

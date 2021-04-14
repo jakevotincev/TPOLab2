@@ -7,6 +7,10 @@ public class Log3FunctionImpl implements Log3Function {
         this.lnFunction = lnFunction;
     }
 
+    public Log3FunctionImpl() {
+        lnFunction = new LnFunctionImpl();
+    }
+
     @Override
     public Double log3(Double x) {
         return lnFunction.ln(x) / lnFunction.ln(3.0);

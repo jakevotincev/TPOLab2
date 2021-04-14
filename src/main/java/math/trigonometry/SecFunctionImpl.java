@@ -7,6 +7,10 @@ public class SecFunctionImpl implements SecFunction{
         this.cosFunction = cosFunction;
     }
 
+    public SecFunctionImpl() {
+        cosFunction = new CosFunctionImpl();
+    }
+
     @Override
     public Double sec(Double x) {
         return 1/ cosFunction.cos(x);

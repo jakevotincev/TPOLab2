@@ -7,6 +7,10 @@ public class CscFunctionImpl implements CscFunction {
         this.sinFunction = sinFunction;
     }
 
+    public CscFunctionImpl() {
+        sinFunction = new SinFunctionImpl();
+    }
+
     @Override
     public Double csc(Double x) {
         return 1 / sinFunction.sin(x);

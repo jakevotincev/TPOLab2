@@ -7,6 +7,10 @@ public class Log5FunctionImpl implements Log5Function {
         this.lnFunction = lnFunction;
     }
 
+    public Log5FunctionImpl() {
+        lnFunction = new LnFunctionImpl();
+    }
+
     @Override
     public Double log5(Double x) {
         return lnFunction.ln(x) / lnFunction.ln(5.0);
